@@ -323,19 +323,19 @@ input {
 }
 
 .artist-image02 {
-    background-image: url('image/melanie.jpg');
+    background-image: url('./image/melanie.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .artist-image01 {
-    background-image: url('image/abhe.jpg');
+    background-image: url('./image/abhe.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .artist-image03 {
-    background-image: url('image/joel.jpg');
+    background-image: url('./image/joel.jpg');
     background-size: cover;
     background-position: center;
 }
