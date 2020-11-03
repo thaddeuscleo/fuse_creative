@@ -47,8 +47,16 @@ input {
     background-color: unset;
 }
 
+.bg-blue {
+    background-color: rgb(67, 67, 238);
+}
+
 .gray-400 {
     color: rgb(157, 157, 157);
+}
+
+.p-small {
+    padding: 3px;
 }
 
 .p-1 {
@@ -65,6 +73,10 @@ input {
 
 .p-4 {
     padding: 4em;
+}
+
+.pt-4 {
+    padding-top: 4em;
 }
 
 .m-1 {
@@ -93,6 +105,14 @@ input {
 
 .ml-3 {
     margin-left: 3em;
+}
+
+.mt-2 {
+    margin-top: 2em;
+}
+
+.mt-4 {
+    margin-top: 4em;
 }
 
 .flex {
@@ -154,6 +174,10 @@ input {
 
 .select-none {
     user-select: none;
+}
+
+.rounded {
+    border-radius: 20px;
 }
 
 .nav {
@@ -456,6 +480,13 @@ footer {
 
 /* =========================  album page  ========================== */
 
+.display-banner {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .list-no-style {
     list-style-type: none;
 }
@@ -464,19 +495,42 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .album-container {
     margin: 1em;
     width: 300px;
-    height: 380px;
-    background-color: rgb(223, 223, 223);
+    height: 330px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 0.4em;
 }
 
 .album-image {
     width: 300px;
     height: 250px;
     background-color: black;
+    border-top-left-radius: 0.4em;
+    border-top-right-radius: 0.4em;
 }
+
+.album-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.album-title {
+    margin-left: 0.4em;
+    margin-bottom: 0.2em;
+}
+
+.album-list-item {
+    margin-left: 4px;
+    padding: 5px;
+    flex-wrap: wrap;
+    color: white;
+}
+
 
 
