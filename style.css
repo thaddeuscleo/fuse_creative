@@ -59,6 +59,10 @@ input {
     color: rgb(120, 120, 120);
 }
 
+.gray-700 {
+    color: rgb(69, 69, 69);
+}
+
 .p-small {
     padding: 3px;
 }
@@ -81,6 +85,18 @@ input {
 
 .pt-4 {
     padding-top: 4em;
+}
+
+.pt-5 {
+    padding-top: 5em;
+}
+
+.pb-4 {
+    padding: 4em;
+}
+
+.pb-5 {
+    padding: 5em;
 }
 
 .m-03 {
@@ -624,4 +640,31 @@ footer {
     border-top-right-radius: 10px;
 }
 
+/* ======================== about us ======================  */
 
+/* ======================== offer ========================== */
+
+.form-container {
+    background-color: white;
+    width: 150vh;
+    height: 600px;
+    border-radius: 10px;
+}
+
+.form-container-1 {
+    width: 45%;
+    height: 500px;
+    background-color: rgb(187, 171, 171);
+}
+
+.form-container-2 {
+    width: 2px;
+    height: 550px;
+    background-color: black;
+}
+
+.form-container-3 {
+    width: 45%;
+    height: 500px;
+    /* background-color: rgb(187, 171, 171); */
+}
