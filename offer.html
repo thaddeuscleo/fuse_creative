@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+
     <div class="flex jc-space-bet ai-center bg-soft-gray nav">
         <div class="flex jc-space-bet ai-center bg-c-none">
             <div class="logo ml-1">
@@ -36,31 +37,105 @@
     </div>
 
 
-    <div class="banner bg-c-none flex ai-center jc-space-cen pt-5 pb-4">
+    <div class="banner bg-c-none flex ai-center jc-space-cen pt-5 pb-4 rel">
 
-        <div class="form-container bg-c-none flex ai-center jc-space-cen shadow">
-            <div class="form-container-1">
-                <form action="">
-                    <input type="submit" name="" id="" class="bg-c-none">
-                </form>
-            </div>
 
-            <div class="form-container-2 ml-1"></div>
+        <div class="bg-c-none rotate45 abs bottom-1 top select-none">
+            <marquee behavior="" scrollamount="10" direction="right" class="bg-c-none">
+                <h1 class="bg-c-none display-font medium very-soft">OFFER</h1>
+            </marquee>
+        </div>
 
+        <div class="bg-c-none rotate45 abs bottom select-none">
+            <marquee behavior="" scrollamount="20" direction="right" class="bg-c-none">
+                <h1 class="bg-c-none display-font large very-soft">OFFER</h1>
+            </marquee>
+        </div>
+
+        <div class="bg-c-none rotate45 abs bottom-1 bottom-pos select-none">
+            <marquee behavior="" scrollamount="5" direction="right" class="bg-c-none">
+                <h1 class="bg-c-none display-font medium very-soft">OFFER</h1>
+            </marquee>
+        </div>
+
+        <div class="form-container bg-c-none flex ai-center jc-space-cen shadow abs">
+
+            <!-- Text -->
             <div class="form-container-3 ml-1 bg-c-none gray-700">
                 <h1 class="bg-c-none display-font medium m-03 text-align-right">
                     SUBMIT YOUR MUSIC TO GET AN OFFER
                 </h1>
-                <p class="gray-500 ml-1 bg-c-none text-align-right">
+                <p class="gray-500 ml-1 bg-c-none justify-text">
                     The music should be an original produced by using your own resources(samples and presets). Submit the final music in mp3 format. The prize will be send according to the winner address, so make sure you fill the form with a valid information.  
                 </p>
             </div>
+
+            <!-- Divider -->
+            <div class="form-container-2 ml-1"></div>
+
+
+            <!-- Form -->
+            <div class="form-container-1 bg-c-none">
+                <form action="" class="bg-c-none offer-form">
+                    <!-- Fullname -->
+                    <input type="text" id="fullname" class="bg-c-none form-control" placeholder="Fullname">
+
+                    <!-- Email -->
+                    <input type="text" id="email" class="bg-c-none form-control mt-1" placeholder="Email">
+
+                    <!-- Username -->
+                    <input type="text" id="username" class="bg-c-none form-control mt-1" placeholder="Username">
+
+                    <!-- Text Area -->
+                    <textarea name="" id="address" class="bg-c-none form-control text-area mt-1" placeholder="Address"></textarea>
+
+                    <!-- Gender -->
+                    <div class="bg-c-none flex ai-center mt-1">
+                        <input type="radio" name="gender" id="male-button" class="bg-c-none offer-radio-button">
+                        <label for="male-button" class="bg-c-none ml-02">Male</label>
+                        <input type="radio" name="gender" id="female-button" class="bg-c-none offer-radio-button ml-1">
+                        <label for="female-button" class="bg-c-none ml-02">Female</label>
+                    </div>
+
+
+                    <!-- Region -->
+                    <select name="" id="region" class="bg-c-none form-control mt-1">
+                        <option value="Region" disabled selected>Select Region</option>
+                        <option value="Indonesia">Indonesia</option>
+                        <option value="Malaysia">Malaysia</option>
+                        <option value="China">China</option>
+                        <option value="Singapore">Singapore</option>
+                    </select>
+
+                    <!-- Music Category -->
+                    <select name="" id="music-category" class="bg-c-none form-control mt-1">
+                        <option value="Category" disabled selected>Music Category</option>
+                        <option value="Lofi">Lofi</option>
+                        <option value="Trap">Trap</option>
+                        <option value="Soul">Soul</option>
+                        <option value="Rock">Rock</option>
+                        <option value="Deep House">Deep House</option>
+                        <option value="Pop">Pop</option>
+                    </select>
+
+                    <!-- File Upload -->
+                    <input type="file" id="file" class="bg-c-none form-control mt-1">
+
+                    <input type="submit" name="" id="" class="bg-c-none text-dec-none form-submit-button mt-1 float-r" value="SUBMIT">
+                </form>
+            </div>
+
+            
+
+            
+
+
         </div>
     </div>
 
 
     <!-- Footer -->
-    <footer class="bg-soft-gray flex ai-center jc-space-cen">
+    <footer class="bg-soft-gray flex ai-center jc-space-cen abs">
         
         
         <div class="bg-c-none m-1 flex">
