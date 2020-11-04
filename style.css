@@ -55,6 +55,10 @@ input {
     color: rgb(157, 157, 157);
 }
 
+.gray-500 {
+    color: rgb(120, 120, 120);
+}
+
 .p-small {
     padding: 3px;
 }
@@ -77,6 +81,10 @@ input {
 
 .pt-4 {
     padding-top: 4em;
+}
+
+.m-03 {
+    margin: 0.3em;
 }
 
 .m-1 {
@@ -107,8 +115,20 @@ input {
     margin-left: 3em;
 }
 
+.mt-05 {
+    margin-top: 0.2em;
+}
+
+.mt-1 {
+    margin-top: 1em;
+}
+
 .mt-2 {
     margin-top: 2em;
+}
+
+.mt-3 {
+    margin-top: 3em;
 }
 
 .mt-4 {
@@ -117,6 +137,10 @@ input {
 
 .flex {
     display: flex;
+}
+
+.column {
+    flex-direction: column;
 }
 
 .inline {
@@ -147,12 +171,38 @@ input {
     font-size: 10pt;
 }
 
+.medium {
+    font-size: 50pt;
+}
+
+.medium-small {
+    font-size: 15pt;
+}
+
 .large {
     font-size: 350pt;
 }
 
+.rel {
+    position: relative;
+    z-index: 0;
+}
+
 .abs {
     position: absolute;
+}
+
+.normal {
+    position: relative;
+    z-index: 1;
+}
+
+.bottom {
+    z-index: -1;
+}
+
+.bold {
+    font-weight: bolder;
 }
 
 .light {
@@ -181,7 +231,7 @@ input {
 }
 
 .nav {
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     height: 80px;
     z-index: 999;
@@ -533,5 +583,45 @@ footer {
     color: white;
 }
 
+/* ============================ Pricing/Plan ====================== */
+
+.plan-banner {
+    width: 100%;
+    height: 130vh;
+    background-color: white;
+}
+
+.plan-display-banner-text-container {
+    width: 60%;
+    margin-left: 5em;
+    padding-top: 5em;
+}
+
+.plan-card-big-container {
+    width: 380px;
+    height: 410px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.top-plan-container {
+    background-color: rgb(118, 118, 255);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.normal-plan-container {
+    width: 380px;
+    height: 370px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.top-normal-plan-container {
+    height: 2em;
+    background-color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
 
 
