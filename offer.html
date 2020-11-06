@@ -15,7 +15,9 @@
   <body>
     <div class="flex jc-space-bet ai-center bg-soft-gray nav">
       <div class="flex jc-space-bet ai-center bg-c-none">
-        <div class="logo ml-1"></div>
+        <a href="home.html" class="bg-c-none text-dec-none">
+          <div class="logo ml-1"></div>
+        </a>
         <div class="nav__menu">
           <ul class="nav__list">
             <li class="inline m-2 bg-soft-gray nav__list_item">
@@ -135,7 +137,10 @@
                 class="bg-c-none form-control mt-1"
                 placeholder="Email"
               />
-              <p class="bg-c-none red-text small abs offer-warning-pos" style="bottom: 0.8em; right: 1em;">
+              <p
+                class="bg-c-none red-text small abs offer-warning-pos"
+                style="bottom: 0.8em; right: 1em"
+              >
                 ⚠ Email is required
               </p>
             </div>
@@ -148,7 +153,10 @@
                 class="bg-c-none form-control mt-1"
                 placeholder="Username"
               />
-              <p class="bg-c-none red-text small abs offer-warning-pos" style="bottom: 0.8em; right: 1em;">
+              <p
+                class="bg-c-none red-text small abs offer-warning-pos"
+                style="bottom: 0.8em; right: 1em"
+              >
                 ⚠ Username is required
               </p>
             </div>
@@ -161,29 +169,35 @@
                 class="bg-c-none form-control text-area mt-1"
                 placeholder="Address"
               ></textarea>
-              <p class="bg-c-none red-text small abs offer-warning-pos" >
+              <p class="bg-c-none red-text small abs offer-warning-pos">
                 ⚠ Address is required
               </p>
             </div>
 
             <!-- Gender -->
             <div class="bg-c-none">
-              <div class="bg-c-none flex ai-center jc-space-bet gender-box mt-1">
+              <div
+                class="bg-c-none flex ai-center jc-space-bet gender-box mt-1"
+              >
                 <div class="bg-c-none flex ai-center">
                   <input
-                  type="radio"
-                  name="gender"
-                  id="male-button"
-                  class="bg-c-none offer-radio-button"
-                />
-                <label for="male-button" class="bg-c-none ml-02 small">Male</label>
-                <input
-                  type="radio"
-                  name="gender"
-                  id="female-button"
-                  class="bg-c-none offer-radio-button ml-1"
-                />
-                <label for="female-button" class="bg-c-none ml-02 small">Female</label>
+                    type="radio"
+                    name="gender"
+                    id="male-button"
+                    class="bg-c-none offer-radio-button"
+                  />
+                  <label for="male-button" class="bg-c-none ml-02 small"
+                    >Male</label
+                  >
+                  <input
+                    type="radio"
+                    name="gender"
+                    id="female-button"
+                    class="bg-c-none offer-radio-button ml-1"
+                  />
+                  <label for="female-button" class="bg-c-none ml-02 small"
+                    >Female</label
+                  >
                 </div>
                 <p class="bg-c-none red-text small pr-1">
                   ⚠ Gender is required
@@ -193,7 +207,11 @@
 
             <!-- Region -->
             <div class="bg-c-none rel">
-              <select name="" id="region" class="bg-c-none form-control mt-1 black">
+              <select
+                name=""
+                id="region"
+                class="bg-c-none form-control mt-1 black"
+              >
                 <option value="Region" disabled selected>Select Region</option>
                 <option value="Indonesia">Indonesia</option>
                 <option value="Malaysia">Malaysia</option>
@@ -212,7 +230,9 @@
                 id="music-category"
                 class="bg-c-none form-control mt-1"
               >
-                <option value="Category" disabled selected>Music Category</option>
+                <option value="Category" disabled selected>
+                  Music Category
+                </option>
                 <option value="Lofi">Lofi</option>
                 <option value="Trap">Trap</option>
                 <option value="Soul">Soul</option>
@@ -227,7 +247,11 @@
 
             <!-- File Upload -->
             <div class="bg-c-none rel">
-              <input type="file" id="file" class="bg-c-none form-control mt-1" />
+              <input
+                type="file"
+                id="file"
+                class="bg-c-none form-control mt-1"
+              />
               <p class="bg-c-none red-text small offer-warning-pos abs">
                 ⚠ File is required
               </p>

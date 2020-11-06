@@ -658,7 +658,7 @@ footer {
 .album-container {
   margin: 1em;
   width: 300px;
-  height: 330px;
+  height: 340px;
   background-color: rgb(240, 240, 240);
   border-radius: 0.4em;
 }
@@ -666,9 +666,64 @@ footer {
 .album-image {
   width: 300px;
   height: 250px;
-  background-color: black;
   border-top-left-radius: 0.4em;
   border-top-right-radius: 0.4em;
+}
+
+.is-this-it {
+  background-image: url('./image/albums/isthisit.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.in-the-airplane {
+  background-image: url('./image/albums/intheairplane.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.loonesome {
+  background-image: url('./image/albums/loonesome.jfif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contra {
+  background-image: url('./image/albums/contra.jfif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.teen-dream {
+  background-image: url('./image/albums/teendream.jfif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.byeol {
+  background-image: url('./image/albums/byeol.jfif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sangsu-station {
+  background-image: url('./image/albums/sangsu.jfif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.shots {
+  background-image: url('./image/albums/shots.jfif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .album-desc {
@@ -679,7 +734,14 @@ footer {
 
 .album-title {
   margin-left: 0.4em;
-  margin-bottom: 0.2em;
+  margin-bottom: 0.1em;
+}
+
+.album-p {
+  font-size: 10pt;
+  color: gray;
+  margin-left: 0.6em;
+  margin-bottom: 0.3em;
 }
 
 .album-list-item {
@@ -840,9 +902,9 @@ select.form-control {
   border-radius: 5px;
 }
 
-select.form-control:first-child {
-  /* color: white; */
-}
+/* select.form-control:first-child {
+   color: white; 
+} */
 
 /* input.form-control::placeholder {
   color: white;
