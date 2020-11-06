@@ -1,5 +1,5 @@
-class Offer{
-    constructor(){
+class Offer {
+    constructor() {
         //Inputs
         this.fullnameInput = document.getElementById('fullname')
         this.emailInput = document.getElementById('email')
@@ -21,7 +21,7 @@ class Offer{
         this.regionMessage = document.getElementById('region-message')
         this.musicCategoryMessage = document.getElementById('music-category-message')
         this.fileMessage = document.getElementById('file-message')
-        
+
         //Init State
         this.init()
         this.validate()
@@ -39,9 +39,9 @@ class Offer{
     }
 
     validate() {
-        
         this.submitButton.addEventListener("click", () => {
-            
+            event.preventDefault
+
             this.validateFullname()
 
             this.validateEmail()
@@ -62,7 +62,7 @@ class Offer{
 
     validateFullname() {
         let warning = "⚠ "
-        if(!this.textInputLenght(this.fullnameInput)){
+        if (!this.textInputLenght(this.fullnameInput)) {
             //not filled
             event.preventDefault()
             this.fullnameMessage.innerHTML = warning + "Fullname is required"
@@ -122,6 +122,7 @@ class Offer{
         let warning = "⚠ "
         if (!this.textInputLenght(this.usernameInput)) {
             //not filled
+            event.preventDefault()
             this.usernameMessage.innerHTML = warning + "Username is required"
             this.usernameMessage.style.display = "block"
             return
@@ -130,7 +131,7 @@ class Offer{
         if (!this.startsWithAt(this.usernameInput)) {
             event.preventDefault()
             this.usernameMessage.innerHTML = warning + "Username must start with @"
-            this.usernameMessage.style.display = "block" 
+            this.usernameMessage.style.display = "block"
             return
         }
 
@@ -141,24 +142,28 @@ class Offer{
         let warning = "⚠ "
         if (!this.textInputLenght(this.addressInput)) {
             //not filled
+            event.preventDefault()
             this.addressMessage.innerHTML = warning + "Address is required"
             this.addressMessage.style.display = "block"
             return
         }
 
         if (!this.isAlphaNum(this.addressInput)) {
+            event.preventDefault()
             this.addressMessage.innerHTML = warning + "Address must be alpha numeric"
             this.addressMessage.style.display = "block"
             return
         }
 
         if (!this.isValidCount(this.addressInput)) {
+            event.preventDefault()
             this.addressMessage.innerHTML = warning + "Address must be at laest 4 word"
             this.addressMessage.style.display = "block"
             return
         }
 
         if (!this.isContainSteet(this.addressInput)) {
+            event.preventDefault()
             this.addressMessage.innerHTML = warning + "Address must contain street"
             this.addressMessage.style.display = "block"
             return
@@ -170,9 +175,10 @@ class Offer{
     validateGender() {
         let warning = "⚠ "
         if (!this.maleButton.checked && !this.femaleButton.checked) {
+            event.preventDefault()
             this.genderMessage.innerHTML = warning + "Gender is required"
             this.genderMessage.style.display = "block"
-            return 
+            return
         }
         this.genderMessage.style.display = "none"
         return
@@ -182,9 +188,10 @@ class Offer{
         //default : Region
         let warning = "⚠ "
         if (this.regionInput.value == "Region") {
+            event.preventDefault()
             this.regionMessage.innerHTML = warning + "Region is required"
             this.regionMessage.style.display = "block"
-            return 
+            return
         }
         this.regionMessage.style.display = "none"
         return
@@ -194,9 +201,10 @@ class Offer{
         //default : Category
         let warning = "⚠ "
         if (this.musicCategoryInput.value == "Category") {
+            event.preventDefault()
             this.musicCategoryMessage.innerHTML = warning + "Music category is required"
             this.musicCategoryMessage.style.display = "block"
-            return 
+            return
         }
         this.musicCategoryMessage.style.display = "none"
         return
@@ -205,9 +213,10 @@ class Offer{
     validateFile() {
         let warning = "⚠ "
         if (this.fileInput.files.length == 0) {
+            event.preventDefault()
             this.fileMessage.innerHTML = warning + "File is required"
             this.fileMessage.style.display = "block"
-            return 
+            return
         }
         this.fileMessage.style.display = "none"
         return
@@ -216,7 +225,7 @@ class Offer{
 
     textInputLenght(param) {
         let str = param.value.length
-        if(str == null || str == 0){
+        if (str == null || str == 0) {
             return false
         }
         return true
@@ -224,7 +233,7 @@ class Offer{
 
     textInput5to20(param) {
         let str = param.value.length
-        if(str >= 5 && str <= 20){
+        if (str >= 5 && str <= 20) {
             return true
         }
         return false
@@ -233,9 +242,9 @@ class Offer{
     aplhabetOnly(param) {
         let str = param.value
         for (let i = 0; i < str.length - 1; i++) {
-            if((str.charCodeAt(i) >= 65 && str.charCodeAt(i) <= 90) || (str.charCodeAt(i) >= 97 && str.charCodeAt(i) <= 122) || (str.charCodeAt(i) == 32)){
+            if ((str.charCodeAt(i) >= 65 && str.charCodeAt(i) <= 90) || (str.charCodeAt(i) >= 97 && str.charCodeAt(i) <= 122) || (str.charCodeAt(i) == 32)) {
                 continue
-            }else {
+            } else {
                 return false
             }
         }
@@ -244,7 +253,7 @@ class Offer{
 
     containAt(param) {
         let str = param.value
-        if(str.includes('@')){
+        if (str.includes('@')) {
             return true
         }
         return false
@@ -272,7 +281,7 @@ class Offer{
         for (let i = 0; i < str.length; i++) {
             if ((str.charCodeAt(i) >= 65 && str.charCodeAt(i) <= 90) || (str.charCodeAt(i) >= 97 && str.charCodeAt(i) <= 122) || (str.charCodeAt(i) == 32) || (str.charCodeAt(i) >= 48 && str.charCodeAt(i) <= 57) || (str.charCodeAt(i) == 46)) {
                 continue
-            }else {
+            } else {
                 return false
             }
         }
@@ -281,7 +290,7 @@ class Offer{
 
     isContainSteet(param) {
         let str = param.value
-        if(str.includes('street') || str.includes('Street')){
+        if (str.includes('street') || str.includes('Street')) {
             return true
         }
         return false
