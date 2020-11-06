@@ -40,8 +40,6 @@ class Offer {
 
     validate() {
         this.submitButton.addEventListener("click", () => {
-            event.preventDefault
-
             this.validateFullname()
 
             this.validateEmail()
