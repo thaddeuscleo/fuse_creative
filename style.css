@@ -369,6 +369,17 @@ input {
   user-select: none;
 }
 
+.nav__list_item_text:link {
+  color: rgb(218, 218, 218);
+  -webkit-box-shadow: -4px -1px 37px -15px rgba(255,255,255,1);
+  -moz-box-shadow: -4px -1px 37px -15px rgba(255,255,255,1);
+  box-shadow: -4px -1px 37px -15px rgba(255,255,255,1);
+}
+
+.nav__list_item_text:visited {
+  color: rgb(152, 152, 152);
+}
+
 .nav__list_item_text--hover:hover {
   color: rgb(209, 209, 209);
 }

@@ -124,7 +124,7 @@
                 class="bg-c-none form-control"
                 placeholder="Fullname"
               />
-              <p class="bg-c-none red-text small abs offer-warning-pos">
+              <p id="fullname-message" class="bg-c-none red-text small abs offer-warning-pos">
                 ⚠ Fullname is required
               </p>
             </div>
@@ -138,6 +138,7 @@
                 placeholder="Email"
               />
               <p
+                id="email-message"
                 class="bg-c-none red-text small abs offer-warning-pos"
                 style="bottom: 0.8em; right: 1em"
               >
@@ -154,6 +155,7 @@
                 placeholder="Username"
               />
               <p
+                id="username-message"
                 class="bg-c-none red-text small abs offer-warning-pos"
                 style="bottom: 0.8em; right: 1em"
               >
@@ -169,7 +171,7 @@
                 class="bg-c-none form-control text-area mt-1"
                 placeholder="Address"
               ></textarea>
-              <p class="bg-c-none red-text small abs offer-warning-pos">
+              <p id="address-message" class="bg-c-none red-text small abs offer-warning-pos">
                 ⚠ Address is required
               </p>
             </div>
@@ -199,7 +201,7 @@
                     >Female</label
                   >
                 </div>
-                <p class="bg-c-none red-text small pr-1">
+                <p id="gender-message" class="bg-c-none red-text small pr-1">
                   ⚠ Gender is required
                 </p>
               </div>
@@ -218,7 +220,7 @@
                 <option value="China">China</option>
                 <option value="Singapore">Singapore</option>
               </select>
-              <p class="bg-c-none red-text small offer-warning-pos abs">
+              <p id="region-message" class="bg-c-none red-text small offer-warning-pos abs">
                 ⚠ Region is required
               </p>
             </div>
@@ -240,7 +242,7 @@
                 <option value="Deep House">Deep House</option>
                 <option value="Pop">Pop</option>
               </select>
-              <p class="bg-c-none red-text small offer-warning-pos abs">
+              <p id="music-category-message" class="bg-c-none red-text small offer-warning-pos abs">
                 ⚠ Music Category is required
               </p>
             </div>
@@ -252,7 +254,7 @@
                 id="file"
                 class="bg-c-none form-control mt-1"
               />
-              <p class="bg-c-none red-text small offer-warning-pos abs">
+              <p id="file-message" class="bg-c-none red-text small offer-warning-pos abs">
                 ⚠ File is required
               </p>
             </div>
@@ -260,7 +262,7 @@
             <input
               type="submit"
               name=""
-              id=""
+              id="submit"
               class="bg-c-none text-dec-none form-submit-button mt-1 float-r"
               value="SUBMIT"
             />
@@ -353,5 +355,6 @@
         </p>
       </div>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
